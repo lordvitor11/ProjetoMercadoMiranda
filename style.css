@@ -1,0 +1,16 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu {
+    background-color: aqua;
+    height: 7vh;
+    /* min-height: 55px; */
+}
+
+.container {
+    background-color: blue;
+    height: 93vh;
+    /* min-height: 15vh; */
+}
