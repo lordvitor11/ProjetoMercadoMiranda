@@ -3,31 +3,9 @@ body, html {
     background-color: white;
 }
 
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    background-color: red;
+.menu-bar {
     width: 100%;
-    /* padding: 20px; */
-}
-
-li{
-    margin: 0;
-    display: inline;
-}
-
-li a{
-    color: white;
-    margin-left: 10px;
-    text-decoration: none;
-}
-
-li:hover{
-    background-color: brown;
+    background-color: red;
 }
 
 h1{
