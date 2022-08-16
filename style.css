@@ -19,7 +19,17 @@ li{
     display: inline;
 }
 
-a{
+li a{
     color: white;
     margin-left: 10px;
+    text-decoration: none;
+}
+
+li:hover{
+    background-color: brown;
+}
+
+h1{
+    color: #333;
+    text-align: center;
 }
