@@ -1,11 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
 body, html {
     margin: 0px;
     background-color: white;
 }
 
 .menu-bar {
+    padding: 15px;
+    font-family: 'Sen', sans-serif;
     width: 100%;
     background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+
+    width: 50px;    
+}
+
+.menu-logo {
+    margin-left: 50px;
+}
+
+.menu-buttons {
+    margin-right: 100px;
 }
 
 h1{
@@ -15,20 +34,26 @@ h1{
 }
 
 input {
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     border: none;
     padding: 10px;
     background-color: red;
     color: white;
     font-weight: 600;
+    border-radius: 7px;
 }
 
-input:hover {
-    background-color: brown;
+input:hover{
+    transition: all 0.5s ease;
+    border-radius: 7px;
+    background-color: rgb(117, 35, 35);
 }
 
 input:active {
     background-color: rgb(124, 33, 33);
+}
+
+p {
+    color: whitesmoke;
+    font-weight: bolder;
 }
