@@ -8,19 +8,22 @@ body, html {
 .menu-bar {
     padding: 15px;
     font-family: 'Sen', sans-serif;
-    width: 100%;
+    width: 97.9%;
     background-color: red;
     display: flex;
     justify-content: space-between;
 }
 
 .logo {
-
-    width: 50px;    
+    margin-top: 7px;
+    width: 53px;
+    height: 32px;
+    margin-right: 0px;
 }
 
 .menu-logo {
     margin-left: 50px;
+    display: flex;
 }
 
 .menu-buttons {
@@ -41,6 +44,7 @@ input {
     color: white;
     font-weight: 600;
     border-radius: 7px;
+    margin-top: 8px;
 }
 
 input:hover{
@@ -54,6 +58,8 @@ input:active {
 }
 
 p {
+    margin-right: 0px;
     color: whitesmoke;
     font-weight: bolder;
+    text-shadow: rgb(80, 13, 4) 2px 2px 5px;
 }
