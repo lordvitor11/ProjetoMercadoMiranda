@@ -9,36 +9,38 @@
     <title>Entre</title>
 </head>
 <body>
-    <div class="menu-bar">
-        <div class="menu-logo">
-            <img class="logo" src="./src/MLogo2.png" alt="">
+    <div class="main-container">
+        <div class="menu-bar">
+            <div class="menu-logo">
+                <img class="logo" src="./src/MLogo2.png" alt="">
+            </div>
+            <div class="menu-buttons">
+                <div class="menu0">
+                    <a href="./index.html"><input type="button" value="Inicio"></a>
+                    <a href=""><input type="button" value="Produtos"></a>
+                    <a href="./contato.html"><input type="button" value="Contato"></a>
+                    <a href=""><input type="button" value="Sobre"></a>
+                </div>
+                <div class="menu1">
+                    <a href="#"><input type="button" value="Cadastre-se"></a>
+                    <a href="./login.html"><input class="login-btn" type="button" value="Entre"></a>
+                </div>
+            </div>
         </div>
-        <div class="menu-buttons">
-            <div class="menu0">
-                <a href="./index.html"><input type="button" value="Inicio"></a>
-                <a href=""><input type="button" value="Produtos"></a>
-                <a href="./contato.html"><input type="button" value="Contato"></a>
-                <a href=""><input type="button" value="Sobre"></a>
-            </div>
-            <div class="menu1">
-                <a href="#"><input type="button" value="Cadastre-se"></a>
-                <a href="./login.html"><input class="login-btn" type="button" value="Entre"></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-login">
-        <div class="main">
-            <div class="img">
-                <img src="./src/login-img.webp" alt="">
-            </div>
-            <div class="form">
-                <h2>Área do membro</h2> <br>
-                <form action="#">
-                    <input type="text" name="user" id="usr" placeholder="Usuário"> <br>
-                    <input type="password" name="password" id="passwd" placeholder="Senha"><br>
-                    <input class="btn" type="button" value="Entrar" onclick="login()">
-                </form>
+    
+        <div class="container-login">
+            <div class="main">
+                <div class="img">
+                    <img src="./src/login-img.webp" alt="">
+                </div>
+                <div class="form">
+                    <h2>Área do membro</h2> <br>
+                    <form action="#">
+                        <input type="text" name="user" id="usr" placeholder="Usuário"> <br>
+                        <input type="password" name="password" id="passwd" placeholder="Senha"><br>
+                        <input class="btn" type="button" value="Entrar" onclick="login()">
+                    </form>
+                </div>
             </div>
         </div>
     </div>

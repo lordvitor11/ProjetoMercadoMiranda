@@ -32,9 +32,14 @@ html, body {
     background-color: white;
 }
 
+.main-container {
+    width: 100vw;
+    height: 100vh;
+}
+
 .container-login {
-    width: 100%;
-    height: calc(100vh - 60px);
+    width: 100vw;
+    height: 90.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,8 +48,11 @@ html, body {
 
 .container-login .main {
     display: flex;
-    width: 750px;
-    height: 400px;
+    /* width: 750px; */
+    min-width: 55%;
+    min-height: 65%;
+    /* width: 55vw; */
+    /* height: 65vh; */
     background: #fff;
 }
 
