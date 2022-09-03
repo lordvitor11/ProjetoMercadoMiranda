@@ -26,9 +26,10 @@ body {
 }​
     
 html, body {
+
     height: 100%;
     padding: 0px;
-    margin: 0px;
+    margin: 0 auto;
     background-color: white;
 }
 
@@ -117,15 +118,22 @@ h1{
 }
 
 .container-login .main {
+    min-width: 55%;
+    min-height: 65%;
     border-radius: 10px;
 }
 
 .container-login .img {
-    margin: 40px 0px 0px 55px;
+    min-width: 45%;
+    margin: 40px 20px 0px 55px;
+}
+
+.container-login .image {
+    width: 90%;
 }
 
 .container-login .form {
-    margin-left: 50px;
+    /* margin-left: 50px;    */
     width: 100%;
     /* background-color: #334; */
     display: flex;
