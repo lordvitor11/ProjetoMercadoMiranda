@@ -1,24 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
 
+body {
+    margin: 0px;
+    animation: fadein 0.4s; 
+    -webkit-animation: fadein 0.4s; 
+    -moz-animation: fadein 0.4s; 
+    -ms-animation: fadein 0.4s; 
+}
+
+@keyframes fadein {
+    from { opacity: 0.3; }
+    to { opacity: 1; } 
+    }
+    @-moz-keyframes fadein {
+    from { opacity: 0.3; }
+    to { opacity: 1; } 
+    }
+    @-webkit-keyframes fadein {
+    from { opacity: 0.3; }
+    to { opacity: 1; } 
+    }
+    @-ms-keyframes fadein {
+    from { opacity: 0.3; }
+    to { opacity: 1; } 
+}​
+    
 body, html {
     margin: 0px;
     background-color: white;
 }
 
+.container-login {
+    width: 100vw;
+    height: 89.7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(59, 59, 59);
+}
+
+.container-login .main {
+    display: flex;
+    width: 750px;
+    height: 400px;
+    background: #fff;
+}
+
+.menu1 .login-btn {
+    background-color: rgb(117, 35, 35);
+}
+
 .menu-bar {
-    padding: 15px;
+    padding: 7px 0px 7px 0px;
     font-family: 'Sen', sans-serif;
-    width: 97.9%;
+    width: 100%;
     background-color: red;
     display: flex;
     justify-content: space-between;
 }
 
 .logo {
-    margin-top: 7px;
+    margin: 7px 0px 0px 0px;
     width: 53px;
     height: 32px;
-    margin-right: 0px;
 }
 
 .menu-logo {
@@ -27,7 +72,12 @@ body, html {
 }
 
 .menu-buttons {
-    margin-right: 100px;
+    display: flex;
+    margin-right: 35px;
+}
+
+.menu0 {
+    margin-right: 50px;
 }
 
 h1{
@@ -36,7 +86,7 @@ h1{
     text-align: center;
 }
 
-input {
+.menu-buttons input {
     font-size: 15px;
     border: none;
     padding: 10px;
@@ -47,14 +97,45 @@ input {
     margin-top: 8px;
 }
 
-input:hover{
+.menu-buttons input:hover{
     transition: all 0.5s ease;
     border-radius: 7px;
     background-color: rgb(117, 35, 35);
 }
 
-input:active {
+.menu-buttons input:active {
     background-color: rgb(124, 33, 33);
+}
+
+.container-login .main {
+    border-radius: 10px;
+}
+
+.container-login .img {
+    margin: 40px 0px 0px 55px;
+}
+
+.container-login .form {
+    margin-left: 50px;
+    width: 100%;
+    /* background-color: #334; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-login .form input {
+    background-color: rgb(211, 207, 207);
+    margin-bottom: 5px;
+    padding: 13px;
+    width: 16em;
+    border-radius: 20px;
+    border: none;
+}
+
+.container-login .form .btn {
+    width: 18em;
+    margin-top: 15px;
 }
 
 p {
@@ -62,4 +143,8 @@ p {
     color: whitesmoke;
     font-weight: bolder;
     text-shadow: rgb(80, 13, 4) 2px 2px 5px;
+}
+
+h2 {
+    margin: 0px 0px 0px 30px;
 }
