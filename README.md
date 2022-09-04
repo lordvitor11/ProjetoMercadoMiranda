@@ -4,4 +4,4 @@ Projeto realizado em trio por: <br>
  <a href="https://github.com/NXrding-dev">Victor Hugo</a> <br>
  <a href="https://github.com/thiagoml02">Thiago Macêdo</a> <br>
  
-Instruído pelo professor Monck Charles
+Instruído pelo docente Monck Charles.
