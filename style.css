@@ -92,9 +92,17 @@ html, body {
     margin-right: 50px;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
     color: #000;
+}
+
+#coberturas1 h1 {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
 }
 
 .menu-buttons input {
@@ -167,6 +175,7 @@ h2 {
     margin: 0px 0px 0px 30px;
 }
 
+
 /* Parallax effect region  */
 main {
     display: block;
@@ -230,4 +239,46 @@ section.module.parallax h1 {
     text-align: center;
     font-size: 78px;
     z-index: 50;
+}
+
+#coberturas1 {
+    background-color: red;
+    width: 100%;
+    height: 300px;
+    border-top: white solid 1px;
+}
+
+#contato {
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    width: 100%;
+    height: 52%;    
+    text-align: center;
+}
+
+.box {
+    padding-top: 100px;
+    width: 450px;
+	display: inline-block;
+}
+
+.pcontato1 {
+    color: red;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.pcontato2 {
+    color: darkgray;
+}
+
+.pcontato3 {
+    color: black;
+    font-weight: bold;
+}
+
+.imgcontato {
+    width: 50px;
+    height: 50px;
 }
