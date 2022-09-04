@@ -26,15 +26,17 @@ body {
 }​
     
 html, body {
-
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     height: 100%;
-    padding: 0px;
-    margin: 0 auto;
     background-color: white;
 }
 
 .main-container {
-    width: 100vw;
+    width: 100%;
+    margin: 0 auto;
     height: 100vh;
 }
 
@@ -90,10 +92,9 @@ html, body {
     margin-right: 50px;
 }
 
-h1{
-    color: #333;
-    text-shadow: #333 2px 2px 5px;
-    text-align: center;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    color: #000;
 }
 
 .menu-buttons input {
@@ -155,13 +156,78 @@ h1{
     margin-top: 15px;
 }
 
-p {
+/* p {
     margin-right: 0px;
     color: whitesmoke;
     font-weight: bolder;
     text-shadow: rgb(80, 13, 4) 2px 2px 5px;
-}
+} */
 
 h2 {
     margin: 0px 0px 0px 30px;
+}
+
+/* Parallax effect region  */
+main {
+    display: block;
+    background-color: #FFF;
+}
+
+.module .container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module p {
+    margin-bottom: 40px;
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content {
+    padding: 40px 0;
+    background: rgb(253, 94, 94);
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallax::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+}
+
+section.module.parallax-1 {
+    background-image: url("https://a-static.besthdwallpaper.com/league-of-legends-lol-spirit-blossom-yasuo-wallpaper-2560x1600-64094_7.jpg");
+}
+
+section.module.parallax h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
 }
