@@ -1,50 +1,88 @@
 function login() {
-    let usr = document.querySelector("#usr").value;
-    let passwd = document.querySelector("#passwd").value;
+    var email = localStorage.getItem("email");
+    var passwd = localStorage.getItem("passwd");
 
-    if (usr == "admin" && passwd == "admin") {
+    var emailTemp = document.querySelector("#email").value;
+    var passwdTemp = document.querySelector("#passwd").value;
+    
+    if (emailTemp === email && passwdTemp === passwd) {
+        window.location.href = "../landpage.html";
         alert("Bem-vindo(a)!");
     } else {
         alert("Credenciais inválidas!");
     }
 }
 
-function textChange() {
-    var passwd = document.getElementById("passwd").value
-    var passwd1 = document.getElementById("passwd1");
-    var passwd2 = document.getElementById("passwd2");
-    var passwd3 = document.getElementById("passwd3");
+function save() {
+    window.location.href = "../login.html";
+    var email = document.getElementById('email').value;
+    var passwd = document.getElementById("passwd").value;
+    localStorage.setItem("email", email);
+    localStorage.setItem("passwd", passwd)
+ 
+    alert("Cadastro efetuado com sucesso!")
+}
+
+function passwdChange() {
+    var string = "";
     var upper = false;
     var lower = false;
+    var num = false;
+    var strength = 0;
+    var passwdT = document.getElementById("passwd").value;
+    var span = document.getElementById("strength");
 
-    for (var c = 0; c < passwd.length; c++) {
-        if (passwd[c] === passwd[c].toUpperCase() && passwd[c] != parseInt(passwd[c])) {
+    for (var c = 0; c < passwdT.length; c++) {
+        if (passwdT[c] === passwdT[c].toUpperCase() && passwdT[c] != parseInt(passwdT[c])) {
             upper = true; break;
         }
     }
 
-    for (var c = 0; c < passwd.length; c++) {
-        if (passwd[c] === passwd[c].toLowerCase() && passwd[c] != parseInt(passwd[c])) {
+    for (var c = 0; c < passwdT.length; c++) {
+        if (passwdT[c] === passwdT[c].toLowerCase() && passwdT[c] != parseInt(passwdT[c])) {
             lower = true; break
         }
     }
 
-    if (passwd.length >= 6) {
-        passwd1.style.color = "green";
-    } else {
-        passwd1.style.color = "red";
-    }
-
-    if (upper) {
-        passwd2.style.color = "green";
-    } else {
-        passwd2.style.color = "red";
+    for (var c = 0; c < passwdT.length; c++) {
+        if (!isNaN(passwdT[c])) {
+            num = true; break
+        }
     }
 
     if (lower) {
-        passwd3.style.color = "green";
-    } else {
-        passwd3.style.color = "red";
+        strength += 1;
     }
-}
 
+    if (upper) {
+        strength += 1;
+    }
+
+    if (num) {
+        strength += 1;
+    }
+
+    if (passwdT.length >= 6) {
+        strength += 1;
+    }
+
+    if (passwdT.length >= 10) {
+        strength += 1;
+    }
+
+    for (c = 0; c < strength;++c) {
+        string += "*"
+    }
+
+    span.innerText = string;
+
+    switch (string.length) {
+        case 1: span.style.color = "red"; break;
+        case 2: span.style.color = "orange"; break;
+        case 3: span.style.color = "orange"; break;
+        case 4: span.style.color = "lime"; break;
+        case 5: span.style.color = "lime"; break;
+        default: break;
+
+    } 
+}		

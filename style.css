@@ -309,7 +309,7 @@ section.module.parallax h1 {
     margin-left: 4.7px;
 }
 
-.form #email {
+.form #email, .form #passwd {
     width: 93%;
 }
 
@@ -320,6 +320,14 @@ section.module.parallax h1 {
     color: white;
     background-color: #00A301;
     border: none;
+}
+
+.form span {
+    color: #666666;
+}
+
+.line {
+    border-bottom: 1px solid #D9D8DB;
 }
 
 /* .form-container .form input {
