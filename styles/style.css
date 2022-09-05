@@ -2,7 +2,9 @@
 @import url("./contato.css");
 @import url("./landpage.css");
 @import url("./login.css");
+@import url("./produtos.css");
 @import url("./signup.css");
+@import url("./sobre.css");
 
 /* General config */
 @keyframes fadein {

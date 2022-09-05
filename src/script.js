@@ -1,12 +1,14 @@
 function login() {
     var email = localStorage.getItem("email");
     var passwd = localStorage.getItem("passwd");
+    var usr = document.getElementById("logged-user");
 
     var emailTemp = document.querySelector("#email").value;
     var passwdTemp = document.querySelector("#passwd").value;
     
     if (emailTemp === email && passwdTemp === passwd) {
         window.location.href = "landpage.html";
+        usr.innerHTML = `Logado como ${localStorage.getItem("name")}`;
         alert("Bem-vindo(a)!");
     } else {
         alert("Credenciais inválidas!");
@@ -15,12 +17,15 @@ function login() {
 
 function save() {
     window.location.href = "login.html";
-    var email = document.getElementById('email').value;
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
     var passwd = document.getElementById("passwd").value;
+
+    localStorage.setItem("name", name);
     localStorage.setItem("email", email);
-    localStorage.setItem("passwd", passwd)
+    localStorage.setItem("passwd", passwd);
  
-    alert("Cadastro efetuado com sucesso!")
+    alert("Cadastro efetuado com sucesso!");
 }
 
 function passwdChange() {
