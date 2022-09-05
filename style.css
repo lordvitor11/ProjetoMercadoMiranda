@@ -118,6 +118,10 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 }
 
+.login h2{
+    color: #666666;
+}
+
 .form-container .form input {
     border: 2px solid #D9D8DB;
     background-color: #F4F6F8;
@@ -330,6 +334,10 @@ section.module.parallax h1 {
 
 .line {
     border-bottom: 1px solid #D9D8DB;
+}
+
+.line h1 {
+    color: #666666;
 }
 
 /* .form-container .form input {
