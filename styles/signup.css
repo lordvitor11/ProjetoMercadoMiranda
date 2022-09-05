@@ -1,4 +1,8 @@
 /* Signup page config */
+.signup {
+    color: #666666 !important;
+}
+
 .form-container .form{
     display: flex;
     flex-direction: column;

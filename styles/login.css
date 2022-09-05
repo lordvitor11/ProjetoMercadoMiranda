@@ -7,7 +7,7 @@
 
 .form-container .img {
     min-width: 45%;
-    margin: 40px 20px 0px 55px;
+    margin: 20px 20px 0px 20px;
 }
 
 .form-container .image {
@@ -15,9 +15,6 @@
 }
 
 .form-container .form .login {
-    /* margin-left: 50px;    */
-    width: 100%;
-    /* background-color: #334; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,15 +30,16 @@
 }
 
 .form-container .form .btn {
-    width: 18em;
+    width: 14.7em;
     margin-top: 15px;
 }
 
 .form-container .main {
+    padding: 20px;
     display: flex;
     /* width: 750px; */
-    min-width: 55%;
-    min-height: 65%;
+    min-width: fit-content;
+    min-height: 50%;
     /* width: 55vw; */
     /* height: 65vh; */
     background: #fff;
@@ -64,6 +62,6 @@
     margin-right: 50px;
 }
 
-h2 {
+/* h2 {
     margin: 0px 0px 0px 30px;
-}
+} */
