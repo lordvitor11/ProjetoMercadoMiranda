@@ -14,7 +14,7 @@ function login() {
 }
 
 function save() {
-    window.location.href = "../login.html";
+    window.location.href = "login.html";
     var email = document.getElementById('email').value;
     var passwd = document.getElementById("passwd").value;
     localStorage.setItem("email", email);
