@@ -6,7 +6,7 @@ function login() {
     var passwdTemp = document.querySelector("#passwd").value;
     
     if (emailTemp === email && passwdTemp === passwd) {
-        window.location.href = "../landpage.html";
+        window.location.href = "landpage.html";
         alert("Bem-vindo(a)!");
     } else {
         alert("Credenciais inválidas!");
