@@ -219,7 +219,7 @@ section.module.parallax::after {
 }
 
 section.module.parallax-1 {
-    background-image: url("https://a-static.besthdwallpaper.com/league-of-legends-lol-spirit-blossom-yasuo-wallpaper-2560x1600-64094_7.jpg");
+    background-image: url("https://i0.wp.com/moonbh.com.br/wp-content/uploads/2018/02/sd_2011.jpg?fit=1380%2C960&ssl=1");
 }
 
 section.module.parallax h1 {
@@ -227,6 +227,7 @@ section.module.parallax h1 {
     text-align: center;
     font-size: 78px;
     z-index: 50;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -234,7 +235,7 @@ section.module.parallax h1 {
 #coberturas1 {
     background-color: red;
     width: 100%;
-    height: 300px;
+    height: 50%;
     border-top: white solid 1px;
 }
 
@@ -250,14 +251,15 @@ section.module.parallax h1 {
     bottom: 0;
     color: #FFF;
     width: 100%;
-    height: 52%;    
+    height: 50%;
     text-align: center;
 }
 
-.box {
-    padding-top: 100px;
-    width: 100%vw;
-	display: inline-block;
+#box {
+    padding: 100px 50px 0 50px;
+    display: inline-block;
+    width: 100%wv;
+    height: 50%;
 }
 
 .pcontato1 {
@@ -279,7 +281,6 @@ section.module.parallax h1 {
     width: 50px;
     height: 50px;
 }
-
 
 /* Signup page config */
 .passwd {
@@ -335,3 +336,19 @@ section.module.parallax h1 {
     background-color: ;
     background: #fff;
 } */
+
+.footerlandpage {
+    bottom: 0;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    height: 75px;    
+    text-align: center;
+    line-height: 75px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.container h2, p {
+    color: white;
+}
