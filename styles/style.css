@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+@import url("./contato.css");
+@import url("./landpage.css");
+@import url("./login.css");
+@import url("./signup.css");
+
+/* General config */
+@keyframes fadein {
+    from { opacity: 0.3; }
+    to { opacity: 1; } 
+    }
+    @-moz-keyframes fadein {
+    from { opacity: 0.3; }
+    to { opacity: 1; } 
+    }
+    @-webkit-keyframes fadein {
+    from { opacity: 0.3; }
+    to { opacity: 1; } 
+    }
+    @-ms-keyframes fadein {
+    from { opacity: 0.3; }
+    to { opacity: 1; } 
+}​
+
+/* Reset */
+html, body {
+    font-family: sans-serif;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    height: 100%;
+    background-color: white;
+    margin: 0px;
+    animation: fadein 0.4s; 
+    -webkit-animation: fadein 0.4s; 
+    -moz-animation: fadein 0.4s; 
+    -ms-animation: fadein 0.4s; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    color: #000;
+}
+
+.container h2, p {
+    color: white;
+}
+
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.menu-bar {
+    padding: 7px 0px 7px 0px;
+    font-family: 'Sen', sans-serif;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 7px 0px 0px 0px;
+    width: 150px;
+    height: 30px;
+}
+
+.menu-logo {
+    margin-left: 50px;
+    display: flex;
+}
+
+.menu-buttons {
+    display: flex;
+    margin-right: 35px;
+}
+
+.menu-buttons input {
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border-radius: 7px;
+    margin-top: 8px;
+}
+
+.menu-buttons input:hover{
+    transition: all 0.5s ease;
+    border-radius: 7px;
+    background-color: rgb(117, 35, 35);
+}
+
+.menu-buttons input:active {
+    background-color: rgb(124, 33, 33);
+}
