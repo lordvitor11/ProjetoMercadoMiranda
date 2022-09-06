@@ -28,26 +28,32 @@
             </div>
         </div>
 
+        <div id="popup-container">
+            <div>
+                <span>Cadastro efetuado com sucesso!</span> <br> <br>
+                <button onclick="switchPage()" class="popup-btn">Continuar</button>
+            </div>
+        </div>
+
         <div class="form-container">
             <div class="form signup">
                 <form action="javascript:save()">
                     <div class="line">
-                        <h1 class="signup">Cadastre-se</h1>
-                        <span>É simples e rápido.</span>
+                        <h1 class="signup deactivate">Cadastre-se</h1>
+                        <span class="deactivate">É simples e rápido.</span>
                     </div> <br>
 
-                    <input type="text" id="name" placeholder="Nome" required>
-                    <input class="lastname" type="text" name="last-name" placeholder="Sobrenome" required> <br>
-                    <input type="email" id="email" placeholder="E-mail" required>
-                    <input type="password" id="passwd" placeholder="Senha" oninput="passwdChange()" required>
-                    <span>Força da senha: </span>
-                    <span id="strength"></span><br> <br>
+                    <input class="deactivate" type="text" id="name" placeholder="Nome" required>
+                    <input class="lastname deactivate" type="text" name="last-name" placeholder="Sobrenome" required> <br>
+                    <input class="deactivate" type="email" id="email" placeholder="E-mail" required>
+                    <input class="deactivate" type="password" id="passwd" placeholder="Senha" oninput="passwdChange()" required>
+                    <span class="deactivate">Força da senha: </span>
+                    <span class="deactivate" id="strength"></span><br> <br>
 
-                    <span>Data de nascimento</span> <br>
-                    <input type="date" name="" id="date" required> <br> <br> 
-                    <span id="error"></span>
+                    <span class="deactivate">Data de nascimento</span> <br>
+                    <input class="deactivate" type="date" name="" id="date" required> <br> <br> 
 
-                    <input class="confirm" type="submit" value="Confirmar">
+                    <input class="confirm deactivate" type="submit" value="Confirmar">
                 </form>
             </div>
         </div>

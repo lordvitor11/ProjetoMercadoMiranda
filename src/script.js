@@ -1,14 +1,23 @@
+function switchPage() {
+    window.location.href = "login.html";
+}
+
+function landpageLoad() {
+    var usr = document.getElementById("logged-user");
+    usr.innerHTML = localStorage.getItem("name");
+}
+
 function login() {
     var email = localStorage.getItem("email");
     var passwd = localStorage.getItem("passwd");
-    var usr = document.getElementById("logged-user");
+
+    console.log(localStorage.getItem("name"));
 
     var emailTemp = document.querySelector("#email").value;
     var passwdTemp = document.querySelector("#passwd").value;
     
     if (emailTemp === email && passwdTemp === passwd) {
         window.location.href = "landpage.html";
-        usr.innerHTML = `Logado como ${localStorage.getItem("name")}`;
         alert("Bem-vindo(a)!");
     } else {
         alert("Credenciais inválidas!");
@@ -16,16 +25,17 @@ function login() {
 }
 
 function save() {
-    window.location.href = "login.html";
+    var popup = document.getElementById("popup-container");
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var passwd = document.getElementById("passwd").value;
+    var display = document.getElementsByClassName("deactivate");
 
     localStorage.setItem("name", name);
     localStorage.setItem("email", email);
     localStorage.setItem("passwd", passwd);
- 
-    alert("Cadastro efetuado com sucesso!");
+
+    popup.style.cssText = "display: block;";
 }
 
 function passwdChange() {
