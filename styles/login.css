@@ -26,8 +26,11 @@
     background-color: #F4F6F8;
     margin-bottom: 5px;
     padding: 13px;
-    width: 15em !important;
     border-radius: 5px;
+}
+
+.form-container .form .login-input {
+    width: 15em !important;
 }
 
 .form-container .form .btn {
