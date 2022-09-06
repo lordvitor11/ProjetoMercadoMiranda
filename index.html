@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <script src="./src/script.js"></script>
     <title>Cadastre-se</title>
 </head>
@@ -32,11 +32,11 @@
             <div class="form signup">
                 <form action="javascript:save()">
                     <div class="line">
-                        <h1>Cadastre-se</h1>
+                        <h1 class="signup">Cadastre-se</h1>
                         <span>É simples e rápido.</span>
                     </div> <br>
 
-                    <input type="text" name="name" placeholder="Nome" required>
+                    <input type="text" id="name" placeholder="Nome" required>
                     <input class="lastname" type="text" name="last-name" placeholder="Sobrenome" required> <br>
                     <input type="email" id="email" placeholder="E-mail" required>
                     <input type="password" id="passwd" placeholder="Senha" oninput="passwdChange()" required>
@@ -45,7 +45,7 @@
 
                     <span>Data de nascimento</span> <br>
                     <input type="date" name="" id="date" required> <br> <br> 
-                    <span id="error"></span> <br> <br>
+                    <span id="error"></span>
 
                     <input class="confirm" type="submit" value="Confirmar">
                 </form>
