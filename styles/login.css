@@ -56,7 +56,7 @@
 
 .form-container {
     width: 100vw;
-    height: 92.5vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
