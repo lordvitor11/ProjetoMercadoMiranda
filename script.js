@@ -1,4 +1,6 @@
 function switchPage() {
+    var popup = document.getElementById("popup-container");
+    popup.style.cssText = "display: none;";
     window.location.href = "login.html";
 }
 
@@ -6,10 +8,10 @@ function switchPage2() {
     var popup = document.getElementById("popup-container");
     var popupText = document.getElementById("popup-span");
 
-
     if (popupText.textContent == "Credenciais inválidas!") {
         popup.style.cssText = "display: none;";
     } else {
+        popup.style.cssText = "display: none;";
         window.location.href = "landpage.html";
     }
 }

@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./script.js"></script>
     <title>Contato</title>
 </head>
-<body>
+<body onload="landpageLoad()">
   <div class="main-container">
     <div class="menu-bar">
       <div class="menu-logo">
@@ -21,7 +22,8 @@
             <a href="./sobre.html"><input type="button" value="Sobre"></a>
         </div>
         <div class="menu1">
-            <a href="./login.html"><input class="login-btn" type="button" value="Sair"></a>
+          <span class="name">Logado como</span> <span id="logged-user"></span> 
+          <a href="./login.html"><input class="login-btn" type="button" value="Sair"></a>
         </div>
     </div>
   </div>
