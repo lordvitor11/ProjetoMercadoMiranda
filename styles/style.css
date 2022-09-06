@@ -10,19 +10,22 @@
 @keyframes fadein {
     from { opacity: 0.3; }
     to { opacity: 1; } 
-    }
-    @-moz-keyframes fadein {
+}
+
+@-moz-keyframes fadein {
     from { opacity: 0.3; }
     to { opacity: 1; } 
-    }
-    @-webkit-keyframes fadein {
+}
+
+@-webkit-keyframes fadein {
     from { opacity: 0.3; }
     to { opacity: 1; } 
-    }
-    @-ms-keyframes fadein {
+}
+
+@-ms-keyframes fadein {
     from { opacity: 0.3; }
     to { opacity: 1; } 
-}​
+}
 
 /* Reset */
 html, body {

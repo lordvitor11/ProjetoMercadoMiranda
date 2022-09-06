@@ -2,40 +2,53 @@ function switchPage() {
     window.location.href = "login.html";
 }
 
+function switchPage2() {
+    var popup = document.getElementById("popup-container");
+    var popupText = document.getElementById("popup-span");
+
+
+    if (popupText.textContent == "Credenciais inválidas!") {
+        popup.style.cssText = "display: none;";
+    } else {
+        window.location.href = "landpage.html";
+    }
+}
+
 function landpageLoad() {
-    var usr = document.getElementById("logged-user");
-    usr.innerHTML = localStorage.getItem("name");
+    document.getElementById("logged-user").innerHTML = localStorage.getItem("name");
 }
 
 function login() {
     var email = localStorage.getItem("email");
     var passwd = localStorage.getItem("passwd");
-
-    console.log(localStorage.getItem("name"));
+    var popup = document.getElementById("popup-container");
+    var popupText = document.getElementById("popup-span");
 
     var emailTemp = document.querySelector("#email").value;
     var passwdTemp = document.querySelector("#passwd").value;
     
     if (emailTemp === email && passwdTemp === passwd) {
-        window.location.href = "landpage.html";
-        alert("Bem-vindo(a)!");
+        popup.style.cssText = "display: block;";
+        popupText.innerText = "Logado(a)!";
     } else {
-        alert("Credenciais inválidas!");
+        popup.style.cssText = "display: block;";
+        popupText.innerText = "Credenciais inválidas!";
     }
 }
 
 function save() {
+    var popupText = document.getElementById("popup-span");
     var popup = document.getElementById("popup-container");
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var passwd = document.getElementById("passwd").value;
-    var display = document.getElementsByClassName("deactivate");
 
     localStorage.setItem("name", name);
     localStorage.setItem("email", email);
     localStorage.setItem("passwd", passwd);
 
     popup.style.cssText = "display: block;";
+    popupText.innerText = "Cadastro efetuado com sucesso!";
 }
 
 function passwdChange() {
