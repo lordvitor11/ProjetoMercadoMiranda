@@ -55,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://srv2.imgonline.com.ua/result_img/imgonline-com-ua-blur-XcAgI7B0AcX.jpg");
+    background-image: url("../src/bg_login_signup.jpg");
     background-size: 100%;
 }
 
