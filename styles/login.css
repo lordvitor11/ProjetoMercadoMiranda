@@ -56,13 +56,13 @@
 
 .form-container {
     width: 100vw;
-    height: 90.5%;
+    height: 92.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(39, 39, 39);
-    /* background-image: url("../src/bg_login_signup.jpg");
-    background-size: 100%; */
+    background-image: url("../src/bg_login_signup-min.jpg");
+    background-size: 100%;
 }
 
 .menu0 {

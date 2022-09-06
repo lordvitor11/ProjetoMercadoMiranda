@@ -31,12 +31,12 @@ div.produtoCard > div.descProduto *{
 
 div.descProduto > h3{
     color: white;
-    /* color: #646464; */
     font-weight: lighter;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 p {
-    color: black !important;
+    color: white !important;
 }
 
 #image2 {

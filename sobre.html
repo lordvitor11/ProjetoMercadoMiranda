@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="./src/script.js"></script>
+    <script src="./script.js"></script>
     <title>Sobre</title>
 </head>
-<body>
+<body onload="landpageLoad()">
     <div class="main-container">
         <div class="menu-bar">
             <div class="menu-logo">
@@ -23,29 +23,41 @@
                 </div>
                 <div class="menu1">
                     <!-- <a href="./signup.html"><input type="button" value="Cadastre-se"></a> -->
-                    <span id="logged-user"></span> 
+                    <span class="name">Logado como</span> <span id="logged-user"></span> 
                     <a href="./login.html"><input class="login-btn" type="button" value="Sair"></a>
                 </div>
             </div>
         </div>
 
-        <div class="sobre">
-            <h1>Instituto Federal de Educação, Ciências e Tecnologina da Bahia</h1>
-            <h4>Este projeto foi realizado em trio, instruído pelo docente Monck Charles.</h4> 
-            <h4>Feito pelos discentes:</h4>
-            <img src="./src/">
-            <h4>Thiago Macedo</h4>
-            <h5>Nasceu e mora em Seabra <br> 15/04/2005 <br> Estuda no Ifba - campus Seabra</h5>
-            <img src="./src/">
-            <h4>Victor Hugo</h4>
-            <img src="./src/">
-            <h4>Vitor César</h4>
+        <div id="sobre">
+            <div id="sobre1">
+              <img class="imgsobre" src="./src/20220906_075847.jpg"><br><br>
+              <span class="psobre1">Thiago Macedo</span><br><br>
+              <span class="psobre2">
+                Olá! Meu nome é Thiago Macedo, tenho 17 anos,<br> nasci em Seabra e<br> atualmente ainda resido em Seabra,<br>
+                no momento estudando no IFBA - Campus Seabra.</span><br><br>
+              <span class="psobre3"><a href="https://github.com/thiagoml02" target="_blank">macedothiago355@gmail.com</a></span><br><br>
+            </div>
+      
+            <div id="sobre1">
+                <img class="imgsobre" src="./src/IMG_20220906_084303.jpg"><br><br>
+                <span class="psobre1">Victor Hugo</span><br><br>
+                <span class="psobre2">Olá! Meu nome é Victor Hugo, tenho 18 anos,<br> nasci em Seabra e resido em Seabra<br> para fins estudantis,<br> atualmente estudando no IFBA - Campus Seabra.</span><br><br>
+                <span class="psobre3"><a href="https://github.com/nxrding-dev" target="_blank">victorhugo.private@gmail.com</a></span><br><br>
+            </div>
+      
+            <div id="sobre1">
+                <img class="imgsobre" src="./src/IMG_20220906_081734.jpg"><br><br>
+                <span class="psobre1">Vitor Cesar</span><br><br>
+                <span class="psobre2">Olá! Meu nome é Vitor Cesar, tenho 18 anos,<br> nasci em São Paulo e resido em Seabra<br> para fins estudantis,<br> atualmente estudando no IFBA - Campus Seabra.</span><br><br>
+                <span class="psobre3"><a href="https://github.com/lordvitor11" target="_blank">vitorcesarsouza7@gmail.com</a></span><br><br>
+            </div>
         </div>
 
         <main>
             <section>
-                <footer class="footer">
-                    2022© Site desenvolvido pelos discentes do Instituo Federal da Bahia - Campus Seabra: Vitor César, Victor Hugo e Thiago Macedo.
+                <footer class="footer position">
+                    2022 © Site desenvolvido pelos discentes do Instituo Federal da Bahia - Campus Seabra: Vitor Cesar, Victor Hugo e Thiago Macedo.
                 </footer>
             </section>
         </main>

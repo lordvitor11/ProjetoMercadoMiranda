@@ -45,6 +45,8 @@ function save() {
     var email = document.getElementById("email").value;
     var passwd = document.getElementById("passwd").value;
 
+    name = name.replace(name.charAt(0), name.charAt(0).toUpperCase());
+    
     localStorage.setItem("name", name);
     localStorage.setItem("email", email);
     localStorage.setItem("passwd", passwd);
