@@ -1,4 +1,11 @@
 /* Signup page config */
+
+@media screen and (max-width: 500px) {
+   .form-container .form.signup .lastname {
+        margin-left: 0;
+    }
+}
+
 .signup {
     color: #666666 !important;
 }
@@ -76,16 +83,3 @@
     /* width: fit-content; */
     border-radius: 5px;
 }
-
-
-/* 
-.popup-container div {
-    background-color: #666666;
-} */
-
-
-/* .form-container .form input {
-    padding: 20px;
-    background-color: ;
-    background: #fff;
-} */
