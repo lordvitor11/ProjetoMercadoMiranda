@@ -29,6 +29,10 @@
     border-radius: 5px;
 }
 
+.form-container .form .login-input {
+    width: 15em !important;
+}
+
 .form-container .form .btn {
     width: 14.7em;
     margin-top: 15px;
