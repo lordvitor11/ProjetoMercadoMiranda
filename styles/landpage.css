@@ -4,6 +4,17 @@ main {
     background-color: #FFF;
 }
 
+.name {
+    color: white;
+    font-weight: 100;
+}
+
+#logged-user {
+    padding-right: 10px;
+    color: white;
+    font-weight: 600;
+}
+
 .module .container {
     width: 100%;
     max-width: 720px;
