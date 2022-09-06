@@ -53,7 +53,8 @@ section.module.parallax::after {
 }
 
 section.module.parallax-1 {
-    background-image: url("https://i0.wp.com/moonbh.com.br/wp-content/uploads/2018/02/sd_2011.jpg?fit=1380%2C960&ssl=1");
+    background-image: url("../src/bg_landpage1.jpg");
+    background-size: 100%;
 }
 
 section.module.parallax h1 {
