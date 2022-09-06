@@ -1,4 +1,5 @@
 /* Login page config */
+
 .form-container .main {
     min-width: fit-content;
     min-height: fit-content;
@@ -25,7 +26,6 @@
     background-color: #F4F6F8;
     margin-bottom: 5px;
     padding: 13px;
-    width: 16em;
     border-radius: 5px;
 }
 
@@ -34,18 +34,19 @@
 }
 
 .form-container .form .btn {
-    width: 14.7em;
+    width: 17.3em !important;
     margin-top: 15px;
+}
+
+.memberzone {
+    margin-left: 40px;
 }
 
 .form-container .main {
     padding: 20px;
     display: flex;
-    /* width: 750px; */
     min-width: fit-content;
-    min-height: 50%;
-    /* width: 55vw; */
-    /* height: 65vh; */
+    min-height: fit-content;
     background: #fff;
 }
 
@@ -59,13 +60,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(39, 39, 39);
+    /* background-image: url("../src/bg_login_signup.jpg");
+    background-size: 100%; */
 }
 
 .menu0 {
     margin-right: 50px;
 }
-
-/* h2 {
-    margin: 0px 0px 0px 30px;
-} */

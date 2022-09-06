@@ -1,0 +1,44 @@
+div.produtos-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    width: 100%;
+    justify-content: center;
+}
+
+div.produtoCard {
+    background: rgb(253, 94, 94);
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 4.5);
+    margin: 10px 40px;
+    text-align: center;
+    border: 1px solid red;
+    min-width: 320px;
+    justify-content: space-between;
+}
+
+img.imgproduto {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+div.produtoCard > div.descProduto *{
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+div.descProduto > h3{
+    color: white;
+    /* color: #646464; */
+    font-weight: lighter;
+}
+
+p {
+    color: black !important;
+}
+
+#image2 {
+    height: 36%;
+}
