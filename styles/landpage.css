@@ -4,17 +4,6 @@ main {
     background-color: #FFF;
 }
 
-.name {
-    color: white;
-    font-weight: 100;
-}
-
-#logged-user {
-    padding-right: 10px;
-    color: white;
-    font-weight: 600;
-}
-
 .module .container {
     width: 100%;
     max-width: 720px;
@@ -64,8 +53,7 @@ section.module.parallax::after {
 }
 
 section.module.parallax-1 {
-    background-image: url("../src/bg_landpage1-min.webp");
-    background-size: 100%;
+    background-image: url("https://i0.wp.com/moonbh.com.br/wp-content/uploads/2018/02/sd_2011.jpg?fit=1380%2C960&ssl=1");
 }
 
 section.module.parallax h1 {

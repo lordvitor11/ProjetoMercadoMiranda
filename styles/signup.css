@@ -47,43 +47,6 @@
     border-bottom: 1px solid #D9D8DB;
 }
 
-#popup-container {
-    text-align: center;
-    display: none;
-    color: white;
-    width: 100vw;
-    height: 100vh;
-    background-color: #241c1c;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 1%;
-    left: 37.1%;
-    width: fit-content;
-    height: fit-content;
-    padding: 30px;
-}
-
-.popup-btn {
-    font-weight: 400;
-    color: white;
-    background-color: #f52121;
-    border: 2px solid #ee1919;
-    margin-bottom: 5px;
-    padding: 5px;
-    width: 292px;
-    /* width: fit-content; */
-    border-radius: 5px;
-}
-
-
-/* 
-.popup-container div {
-    background-color: #666666;
-} */
-
-
 /* .form-container .form input {
     padding: 20px;
     background-color: ;
